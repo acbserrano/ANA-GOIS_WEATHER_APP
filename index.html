@@ -19,6 +19,17 @@
   <body>
     <div class="container">
       <div class="weather-app">
+        <div class="searchcityform">
+          <form id="search-form">
+            <input
+              type="search"
+              placeholder="enter a city"
+              class="form-control"
+              id="city-input"
+            />
+            <input type="submit" value=" search" class="searchbutton" />
+          </form>
+        </div>
         <div class="row justify-content-md-center">
           <div class="col-4 city-name">
             <h1 id="city"></h1>
@@ -29,19 +40,16 @@
             </span>
           </div>
           <div class="col-sm-auto">
-            <div class="big-icon">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                alt="Clear"
-              />
+            <div>
+              <img src="" alt="Clear" id="icon" class="big-icon" />
             </div>
           </div>
           <div class="col-4">
             <ul>
-              <li>Updated: <span id="date"></span></li>
-              <li id="description"></li>
-              <li>Humidity: <span id="humidity">73</span>%</li>
-              <li>Wind: <span id="wind"></span> km/h</li>
+              <li>updated: <span id="date"></span></li>
+              <li>condition: <span id="description"></span></li>
+              <li>humidity: <span id="humidity">73</span>%</li>
+              <li>wind: <span id="wind"></span> km/h</li>
             </ul>
           </div>
         </div>
@@ -50,7 +58,7 @@
             href="https://github.com/acbserrano/ANA-GOIS_WEATHER_APP"
             target="_blank"
             >Open source code</a
-          >
+          ><br />
           by Ana Góis
         </div>
       </div>

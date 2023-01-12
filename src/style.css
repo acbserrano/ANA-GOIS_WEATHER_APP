@@ -10,14 +10,14 @@ li {
   padding: 0;
 }
 
-li::first-letter {
-  text-transform: capitalize;
-}
-
 ul {
   margin: 0;
   padding: 0;
   font-size: 14px;
+}
+
+.col-4 {
+  padding-left: 0px;
 }
 
 .weather-app {
@@ -25,7 +25,7 @@ ul {
   height: 900px;
   margin: 0 auto;
   color: red;
-  padding-top: 300px;
+  padding-top: 60px;
 }
 
 .container {
@@ -39,6 +39,7 @@ ul {
 
 .city-name {
   text-align: right;
+  padding-right: 0px;
 }
 
 .coded {
@@ -48,15 +49,44 @@ ul {
 }
 
 .big-icon {
-  padding-top: 15px;
+  margin: 0 auto;
+  max-width: 70px;
+  position: relative;
+  top: 5px;
 }
 
 .units {
   position: relative;
   font-size: 12px;
   top: -10px;
+  padding: 0 auto;
 }
 
 .numberTemp {
   font-size: 25px;
+}
+
+.searchbutton {
+  color: red;
+  font-size: 15px;
+  background: none;
+  border: none;
+}
+
+.form-control {
+  color: red;
+  font-size: 12px;
+  background: none;
+  border-color: red;
+  border-radius: 0px;
+  border-width: 0 0 2px 0;
+  font-style: italic;
+  background: none;
+  width: 200px;
+}
+
+.searchcityform {
+  margin-left: 100px;
+  margin-top: 100px;
+  padding-bottom: 100px;
 }
