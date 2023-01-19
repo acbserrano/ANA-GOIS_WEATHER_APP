@@ -14,6 +14,38 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = ` <div
+          class="row justify-content-md-center forecast-wrapper">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-4 forecast-date">${day}</div>
+          <div class="col-sm-auto">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
+              alt="Clear"
+              id="icon"
+              class="small-icon"
+            />
+          </div>
+          <div class="col-4 forecast-temp">
+            <ul>
+              <li><span class="forecast-temp-max">18º</span></li>
+              <li><span class="forecast-temp-min">12º</span></li>
+            </ul>
+          </div>
+        `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
@@ -77,3 +109,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Lisbon");
+displayForecast();

@@ -1,7 +1,7 @@
 h1 {
   font-size: 30px;
   margin-bottom: 0px;
-  padding-top: 12px;
+  padding-top: 5px;
   font-weight: 600;
 }
 
@@ -100,7 +100,7 @@ ul {
 .searchcityform {
   margin-left: 100px;
   margin-top: 100px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 .weather-temperature .active {
@@ -131,7 +131,7 @@ a:active {
 }
 
 .forecast-wrapper {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .forecast-date {
