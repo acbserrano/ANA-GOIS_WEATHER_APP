@@ -5,6 +5,10 @@ h1 {
   font-weight: 600;
 }
 
+.numberTemp {
+  font-weight: 600;
+}
+
 li {
   list-style: none;
   margin: 0;
@@ -14,7 +18,8 @@ li {
 ul {
   margin: 0;
   padding: 0;
-  font-size: 15px;
+  font-size: 13px;
+  padding-bottom: 25px;
 }
 
 .col-4 {
